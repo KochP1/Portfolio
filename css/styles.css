@@ -1,12 +1,17 @@
 body{
     margin: 0;
     font-size: 16px;
-    font-family: "Jersey 25", sans-serif;
-    letter-spacing: 2px;
+    font-family: "Roboto", sans-serif;
 }
 
 *{
     box-sizing: border-box;
+}
+
+h1{
+    font-size: 4rem;
+    margin: 0;
+    color: #2850b5;
 }
 
 nav{
@@ -22,12 +27,60 @@ nav{
     font-size: 1.2rem;
 }
 
-.mi-imagen{
+.personal-info__container{
     display: flex;
-    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.mi-imagen{
     margin-top: 50px;
     border-radius: 100%;
     box-shadow: 0px 0px 5px 0px #333;
     width: 300px;
     height: 300px;
+    background: url('../images/FotoPerfil.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #2850b5;
+}
+
+.personal-info__container p{
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+}
+
+.about-me__container p{
+    max-width: 700px;
+    text-wrap: pretty;
+    padding: 0;
+}
+
+.info-list{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    font-size: 1.2rem;
+    justify-content: center;
+    padding: 0;
+}
+
+.info-list li{
+    border-radius: 100%;
+    background-color: #2850b5;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.info-list li a i{
+    color: #fff;
+    font-size: 1.3rem;
 }
