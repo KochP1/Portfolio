@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    font-size: 16px;
+    font-family: "Jersey 25", sans-serif;
+    letter-spacing: 2px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.mi-imagen{
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px 0px #333;
+    width: 300px;
+    height: 300px;
+}
