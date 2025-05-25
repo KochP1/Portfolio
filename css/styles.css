@@ -89,3 +89,9 @@ nav{
     color: #fff;
     font-size: 1.3rem;
 }
+
+/* Modo oscuro */
+
+body.dark-mode{
+    background-color: #333;
+}
