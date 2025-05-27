@@ -27,6 +27,10 @@ nav{
     font-size: 1.2rem;
 }
 
+.nav-item{
+    cursor: pointer;
+}
+
 .personal-info__container{
     display: flex;
     flex-direction: column;
@@ -54,11 +58,13 @@ nav{
     font-size: 1.3rem;
 }
 
-.about-me__container p{
-    max-width: 700px;
-    text-wrap: pretty;
-    padding: 0;
+.sections__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
+
+
 
 .info-list{
     display: flex;
@@ -90,8 +96,43 @@ nav{
     font-size: 1.3rem;
 }
 
+h2{
+    font-size: 2.6rem;
+    color: #2850b5;
+    margin: 0;
+    padding: 0;
+}
+
+.section__container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 80%;
+}
+
+.section__container p{
+    font-size: 1.5rem;
+}
+
+.section__container hr {
+    width: 100%;
+    border: 2px solid #2850b5;
+}
+
 /* Modo oscuro */
 
 body.dark-mode{
-    background-color: #333;
+    background-color: #121212;
+}
+
+.nav.dark-mode{
+    color: #fff;
+}
+
+.personal-info__container.dark-mode p{
+    color: #fff;
+}
+
+.section__container.dark-mode p{
+    color: #fff;
 }

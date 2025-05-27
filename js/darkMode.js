@@ -25,6 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const nav = document.querySelectorAll(".nav");
         nav.forEach(nav => nav.classList.add("dark-mode"));
+
+        const infoContainer = document.querySelectorAll('.personal-info__container');
+        infoContainer.forEach(container => container.classList.add('dark-mode'));
+
+        const sectionContainer = document.querySelectorAll('.section__container');
+        sectionContainer.forEach(container => container.classList.add('dark-mode'));
     }
 
     function disableDarkMode() {
@@ -35,6 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const nav = document.querySelectorAll(".nav");
         nav.forEach(nav => nav.classList.remove("dark-mode"));
+
+        const infoContainer = document.querySelectorAll('.personal-info__container');
+        infoContainer.forEach(container => container.classList.remove('dark-mode'));
+
+        const sectionContainer = document.querySelectorAll('.section__container');
+        sectionContainer.forEach(container => container.classList.remove('dark-mode'));
 
     }
 });
