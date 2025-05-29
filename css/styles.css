@@ -24,6 +24,8 @@ h1{
     color: #2850b5;
 }
 
+/* NAVBAR */
+
 nav{
     display: flex;
     justify-content: center;
@@ -40,6 +42,8 @@ nav{
 .nav-item{
     cursor: pointer;
 }
+
+/* INFORMACIÓN PERSONAL */
 
 .personal-info__container{
     display: flex;
@@ -73,7 +77,6 @@ nav{
     flex-direction: column;
     gap: 50px;
 }
-
 
 .info-list{
     display: flex;
@@ -128,6 +131,10 @@ h2{
     border: 2px solid #2850b5;
 }
 
+/* SERVICIOS */
+
+/* HABILIDADES */
+
 .habilidades__wrapper{
     display: flex;
     justify-content: center;
@@ -146,9 +153,11 @@ h2{
     height: 100%;
 }
 
+/* PROYECTOS */
+
 .proyectos__wrapper{
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(auto-fill);
     gap: 50px;
     justify-content: center;
@@ -162,7 +171,7 @@ h2{
     border-radius: 8px;
     box-shadow: 0px 0px 5px 0px #333;
     gap: 15px;
-    height: 400px;
+    height: 500px;
     padding: 10px;
 }
 
@@ -183,7 +192,6 @@ h2{
 
 .card-img__container{
     width: 100%;
-    padding: inherit;
 }
 
 .card-img__container img{
@@ -226,4 +234,16 @@ body.dark-mode{
 
 .tech-icon.dark-mode svg {
     stroke: #fff;  
+}
+
+.card-proyect.dark-mode h3{
+    color: #2850b5;
+}
+
+.card-proyect.dark-mode .card-links{
+    color: #2850b5;
+}
+
+.card-proyect.dark-mode .techs-proyect__container .techs-proyect svg {
+    stroke: #fff;
 }
