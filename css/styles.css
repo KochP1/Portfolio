@@ -23,6 +23,7 @@ a{
 p{
     margin: 0;
     padding: 0;
+    text-wrap: pretty;
 }
 
 html {
@@ -379,6 +380,54 @@ h2{
 
 /* TESTIMONIOS */
 
+.testimonios__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 50px;
+}
+
+.testimonio-card {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0px #333;
+    padding: 20px;
+    gap: 20px;
+}
+
+.testimonio-card p {
+    font-size: 1.2rem;
+}
+
+.testimonio-card h4 {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.calificacion__container{
+    width: 60px;
+    height: 30px;
+}
+
+.calificacion__container img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 499px) {
+    .testimonio-card {
+        width: 90%;
+    }
+
+    .testimonio-card p {
+        font-size: 1rem;
+    }
+}
+
 /* CONTÁCTO */
 
 .form__wrapper{
@@ -484,6 +533,15 @@ body.dark-mode{
     box-shadow: 0px 0px 5px 0px #fff;
 }
 
+.form-contact.dark-mode {
+    box-shadow: 0px 0px 5px 0px #fff;
+}
+
 .form-contact.dark-mode .form-control input, .form-contact.dark-mode .form-control textarea {
     color: #fff;
+}
+
+.testimonio-card.dark-mode {
+    color: #fff;
+    box-shadow: 0px 0px 5px 0px #fff;
 }

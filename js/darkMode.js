@@ -47,6 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const form = document.querySelectorAll('.form-contact');
         form.forEach(form => form.classList.add('dark-mode'));
+
+        const testimonioCard = document.querySelectorAll('.testimonio-card ');
+        testimonioCard.forEach(card => card.classList.add('dark-mode'));
     }
 
     function disableDarkMode() {
@@ -77,6 +80,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const form = document.querySelectorAll('.form-contact');
         form.forEach(form => form.classList.remove('dark-mode'));
+
+        const testimonioCard = document.querySelectorAll('.testimonio-card ');
+        testimonioCard.forEach(card => card.classList.remove('dark-mode'));
 
     }
 });
