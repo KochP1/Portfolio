@@ -31,6 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const sectionContainer = document.querySelectorAll('.section__container');
         sectionContainer.forEach(container => container.classList.add('dark-mode'));
+
+        const techLogo = document.querySelectorAll('.tech-icon ');
+        techLogo.forEach(logo => logo.classList.add('dark-mode'));
     }
 
     function disableDarkMode() {
@@ -47,6 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const sectionContainer = document.querySelectorAll('.section__container');
         sectionContainer.forEach(container => container.classList.remove('dark-mode'));
+
+        const techLogo = document.querySelectorAll('.tech-icon ');
+        techLogo.forEach(logo => logo.classList.remove('dark-mode'));
 
     }
 });
