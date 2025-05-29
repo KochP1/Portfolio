@@ -15,5 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     form.addEventListener('submit', (event) => {
         event.preventDefault();
+
+        const email = form.email.value.trim();
+        const asunto = form.asunto.value.trim();
+        const mensaje = form.mensaje.value.trim();
+
+        console.log(email);
+        console.log(asunto);
+        console.log(mensaje);
     })
 })

@@ -44,6 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const cardServicio = document.querySelectorAll('.servicio-card');
         cardServicio.forEach(card => card.classList.add('dark-mode'));
+
+        const form = document.querySelectorAll('.form-contact');
+        form.forEach(form => form.classList.add('dark-mode'));
     }
 
     function disableDarkMode() {
@@ -71,6 +74,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const cardServicio = document.querySelectorAll('.servicio-card');
         cardServicio.forEach(card => card.classList.remove('dark-mode'));
+
+        const form = document.querySelectorAll('.form-contact');
+        form.forEach(form => form.classList.remove('dark-mode'));
 
     }
 });
