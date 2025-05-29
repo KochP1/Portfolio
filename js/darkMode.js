@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const darkModeToggle = document.getElementById("darkModeToggle");
+    const darkModeToggle = document.querySelectorAll(".theme-icon");
 
     if (localStorage.getItem('darkMode') === 'enabled') {
         enableDarkMode();
     }
 
-    darkModeToggle.addEventListener("click", () => {
+    darkModeToggle.forEach(element => {
+        element.addEventListener("click", () => {
         document.body.classList.toggle("dark-mode");
 
         if (document.body.classList.contains("dark-mode")) {
@@ -16,12 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem('darkMode', 'disabled');
         }
     });
+    })
 
     function enableDarkMode() {
         document.body.classList.add('dark-mode');
-        const icon = darkModeToggle.querySelector('i');
-        icon.classList.remove("fa-moon");
-        icon.classList.add("fa-sun");
+        darkModeToggle.forEach(element => {
+            const icon = element.querySelector('i');
+            icon.classList.remove("fa-moon");
+            icon.classList.add("fa-sun");
+        })
 
         const nav = document.querySelectorAll(".nav");
         nav.forEach(nav => nav.classList.add("dark-mode"));
@@ -44,9 +48,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function disableDarkMode() {
         document.body.classList.remove('dark-mode');
-        const icon = darkModeToggle.querySelector('i');
-        icon.classList.remove("fa-sun");
-        icon.classList.add("fa-moon");
+        darkModeToggle.forEach(element => {
+            const icon = element.querySelector('i');
+            icon.classList.add("fa-moon");
+            icon.classList.remove("fa-sun");
+        })
 
         const nav = document.querySelectorAll(".nav");
         nav.forEach(nav => nav.classList.remove("dark-mode"));
