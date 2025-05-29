@@ -13,6 +13,11 @@ a{
     text-decoration: none;
 }
 
+p{
+    margin: 0;
+    padding: 0;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -67,8 +72,6 @@ nav{
 }
 
 .personal-info__container p{
-    margin: 0;
-    padding: 0;
     font-size: 1.3rem;
 }
 
@@ -133,6 +136,57 @@ h2{
 
 /* SERVICIOS */
 
+.servicios-h3{
+    font-size: 2.3rem;
+    margin: auto !important;
+    margin-top: 50px !important;
+    color: #2850b5;
+}
+
+.servicios__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    gap: 50px;
+}
+
+.servicio-card{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 0px #333;
+}
+
+.servicio-img__container{
+    width: 500px;
+    height: 300px;
+    margin: auto;
+}
+
+.servicio-img__container img{
+    width: 100%;
+    height: 100%;
+}
+
+.servicio-backend {
+    width: 300px;
+    height: 300px;
+}
+
+.servicio-card h3{
+    font-size: 1.8rem;
+    margin: auto;
+    color: #2850b5;
+}
+
+.servicio-card p {
+    font-size: 1.2rem;
+}
+
 /* HABILIDADES */
 
 .habilidades__wrapper{
@@ -140,7 +194,7 @@ h2{
     justify-content: center;
     align-items: center;
     gap: 40px;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .tech-icon {
@@ -183,6 +237,11 @@ h2{
 .card-proyect h3{
     font-size: 1.8rem;
     margin: 0;
+    color: #2850b5;
+}
+
+.card-proyect .card-links{
+    color: #2850b5;
 }
 
 .card-proyect p {
@@ -214,6 +273,65 @@ h2{
     height: 100%;
 }
 
+/* CONTÁCTO */
+
+.form__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.form-contact{
+    min-width: 500px;
+    min-height: 500px;
+    box-shadow: 0px 0px 5px 0px #333;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    padding-top: 40px;
+    gap: 10px;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #2850b5;
+}
+
+.form-control input {
+    border-radius: 6px;
+    height: 30px;
+    border: 1px solid #333;
+    background-color: transparent;
+}
+
+.form-control textarea {
+    border-radius: 6px;
+    height: 150px;
+    background-color: transparent;
+}
+
+.btn-form{
+    background-color: #2850b5;
+    height: 40px;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-form:hover {
+    background-color: #1d397f;
+}
+
 /* Modo oscuro */
 
 body.dark-mode{
@@ -236,14 +354,10 @@ body.dark-mode{
     stroke: #fff;  
 }
 
-.card-proyect.dark-mode h3{
-    color: #2850b5;
-}
-
-.card-proyect.dark-mode .card-links{
-    color: #2850b5;
-}
-
 .card-proyect.dark-mode .techs-proyect__container .techs-proyect svg {
     stroke: #fff;
+}
+
+.servicio-card.dark-mode{
+    color: #fff;
 }

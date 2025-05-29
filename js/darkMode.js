@@ -37,6 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const cardProyect = document.querySelectorAll('.card-proyect');
         cardProyect.forEach(card => card.classList.add('dark-mode'));
+
+        const cardServicio = document.querySelectorAll('.servicio-card');
+        cardServicio.forEach(card => card.classList.add('dark-mode'));
     }
 
     function disableDarkMode() {
@@ -59,6 +62,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const cardProyect = document.querySelectorAll('.card-proyect');
         cardProyect.forEach(card => card.classList.remove('dark-mode'));
+
+        const cardServicio = document.querySelectorAll('.servicio-card');
+        cardServicio.forEach(card => card.classList.remove('dark-mode'));
 
     }
 });
