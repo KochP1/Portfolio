@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         sidebar.style.display = "none";
     })
 
-    form.addEventListener('submit', (event) => {
+    /*form.addEventListener('submit', (event) => {
         event.preventDefault();
 
         const email = form.email.value.trim();
@@ -38,5 +38,5 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(email);
         console.log(asunto);
         console.log(mensaje);
-    })
+    })*/
 })
